@@ -1,5 +1,12 @@
 function indexOfIgnoreCase(s1, s2) {
-  // write your code here
+  // Edge case: empty substring
+  if (s2 === "") return 0;
+
+  // Convert both strings to lowercase for case-insensitive comparison
+  const str = s1.toLowerCase();
+  const sub = s2.toLowerCase();
+ 
+  return str.indexOf(sub);
 }
 
 // Please do not change the code below
